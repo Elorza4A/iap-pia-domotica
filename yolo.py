@@ -13,7 +13,7 @@ load_dotenv()
 # --- Configuración de la cámara ---
 USUARIO = os.environ["TAPO_USER"]
 PASSWORD = os.environ["TAPO_PASS"]
-IP_CAMARA = "192.168.1.160"
+IP_CAMARA = os.environ["TAPO_CAM_IP"]
 PUERTO = "554"
 STREAM = "stream2"  # 'stream1' = alta resolución, 'stream2' = baja resolución
 
